@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="min-h-screen bg-neutral flex flex-col items-center justify-center"
-  >
-    <p class="text-lg font-semibold text-primary mb-4">
-      Some default layout content shared across all pages
-    </p>
+  <div class="min-h-screen bg-neutral-800 flex flex-col text-neutral-100">
     <slot />
   </div>
 </template>
