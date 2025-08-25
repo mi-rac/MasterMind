@@ -4,7 +4,7 @@ const { sign } = jwt
 
 export default defineEventHandler(async (event) => {
   const { username, password } = await readBody(event)
-  // Validate credentials (lookup user in DB)
+
   if (username === 'admin' && password === 'secret') {
     const token = sign({ user: { name: username } }, process.env.JWT_SECRET!, { expiresIn: '1h' })
     return { token }

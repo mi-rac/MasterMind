@@ -1,5 +1,5 @@
 export default defineNuxtRouteMiddleware(async (to,) => {
-  if (to.path === '/auth/login') return
+  if (to.path === '/auth/login') return;
 
   const token = useCookie('jwt-token')?.value;
   if (!token) return navigateTo('/auth/login');
