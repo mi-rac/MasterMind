@@ -12,6 +12,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@localazy/cli": "^2.0.8",
     "@nuxt/eslint": "^1.9.0",
     "@nuxt/ui-pro": "^3.3.2",
     "eslint": "^9.34.0",
